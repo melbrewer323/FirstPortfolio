@@ -11,7 +11,7 @@ body {
 .header {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #f8b1e9;
+  background-color: #f4e5f;
   color: #111010;
 }
 
@@ -31,3 +31,67 @@ body {
 
 .header nav ul li {
   display: inline-block;
+}
+
+main {
+    display: flex;
+  }
+  
+  aside {
+    width: 30%;
+    background-color: #b9c6ae;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .flexbox-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+
+  }
+
+  .flexbox-item {
+    width: auto;
+    height: 300px;
+    margin: 10px;
+    border: 3px solid;
+    background-color: #b9c6ae;
+  }
+
+  
+  
+  
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  
+  
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+  
+  /* Tablets - header changes color */
+  @media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
