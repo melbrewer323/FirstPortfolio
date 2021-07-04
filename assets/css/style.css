@@ -5,3 +5,15 @@ body {
 .off-canvas-wrapper {
   height: 600px;
 }
+.background {
+ height: 300px;
+ width: 100%;
+}
+#nameHeader {
+  position: absolute;
+  bottom: 8px;
+ left: 16px;
+}
+div ul {
+  list-style: none;
+}
